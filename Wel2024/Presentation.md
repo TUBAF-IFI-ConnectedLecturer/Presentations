@@ -19,6 +19,18 @@ import:   https://raw.githubusercontent.com/liaTemplates/ABCjs/main/README.md
           https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
           https://raw.githubusercontent.com/liascript-templates/plantUML/master/README.md
           https://raw.githubusercontent.com/liaScript/mermaid_template/master/README.md
+
+mark
+  <span style="background-color: @0;
+                           display: flex;
+                           width: calc(100% + 32px);
+                           margin: -16px;
+                           padding: 6px 16px 6px 16px;
+                           ">@1</span>
+@end                           
+
+red:  @mark(#FF888888,@0)
+
 -->
 
 [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/TUBAF-IFI-ConnectedLecturer/Presentations/main/Wel2024/Presentation.md)
@@ -39,8 +51,9 @@ import:   https://raw.githubusercontent.com/liaTemplates/ABCjs/main/README.md
 
 ---
 
-> Das Vorhaben wird durch die AG Elearning Sachsen gefördert. 
+> Das Vorhaben wird durch den [AK Elearning Sachsen](https://bildungsportal.sachsen.de/portal/parentpage/institutionen/arbeitskreis-e-learning-der-lrk-sachsen/) gefördert. 
 
+<!-- class="highlight" -->
 > Dieser Vortrag ist eine Open Educational Resource (OER) und steht unter der Lizenz [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de). Alle enthaltenen Inhalte können frei verwendet werden und sind unter https://github.com/TUBAF-IFI-ConnectedLecturer/Presentations/blob/main/Wel2024/Presentation.md verfügbar
 
 ## Kurzvorstellung der Projektpartner
@@ -81,12 +94,24 @@ __Arbeitsgruppe Softwaretechnologie und Robotik__
 
 __Universitätsbibliothek der Bergakademie Freiberg__
 
+
+
+Anreicherung digitaler Objekte mit Metadaten in OPAL – Implementierung einer Schnittstelle zur Anbindung externer Recherchesysteme
+
+Projektleiterin: Susanne Kandler, Direktorin Universitätsbibliothek TU Bergakademie Freiberg
+
+Projektverantwortlicher: Oliver Löwe
+
+Projektpartner: BPS GmbH
+
+Projektlaufzeit: 01.09.2017 – 31.12.2018
+
+
 ***********************************
 
 ## Ausgangspunkt OER
 
 > _Open Educational Resources (OER) sind Bildungsmaterialien jeglicher Art und in jedem Medium, die unter einer offenen Lizenz stehen. Eine solche Lizenz ermöglicht den kostenlosen Zugang sowie die kostenlose Nutzung, Bearbeitung und Weiterverbreitung durch Dritte ohne oder mit geringfügigen Einschränkungen._ (Quelle: [UNESCO](https://www.unesco.de/bildung/open-educational-resources))
-
 
 _Ich veröffentliche meine Lehrmaterialien und freue mich darüber, wenn andere Dozierende/Lernende diese nutzen._
 
@@ -107,6 +132,8 @@ _Ich habe bereits Inhalte in OPAL mit einer offenen Lizenz hochgeladen._
 
 ### Motivation
 
+> Warum OER?
+
 <div id="example">
 <wokwi-led color="red"   pin="13" label="13"></wokwi-led>
 <wokwi-led color="green" pin="12" label="12"></wokwi-led>
@@ -115,10 +142,10 @@ _Ich habe bereits Inhalte in OPAL mit einer offenen Lizenz hochgeladen._
 <span id="simulation-time"></span>
 </div>
 
-``` cpp
+``` cpp Blink.cpp
 byte leds[] = {13, 12, 11, 10};
+
 void setup() {
-  Serial.begin(115200);
   for (byte i = 0; i < sizeof(leds); i++) {
     pinMode(leds[i], OUTPUT);
   }
@@ -126,8 +153,6 @@ void setup() {
 
 int i = 0;
 void loop() {
-  Serial.print("LED: ");
-  Serial.println(i);
   digitalWrite(leds[i], HIGH);
   delay(250);
   digitalWrite(leds[i], LOW);
@@ -135,6 +160,9 @@ void loop() {
 }
 ```
 @AVR8js.sketch(example)
+
+<!-- class="highlight" -->
+> OER unterstützen den individuellen Lehrenden bei der Erstellung von interaktiven Lehr-Lern-Inhalten, die die Kapazitäten eines einzelnen übersteigen.
 
 ### Herausforderungen bei der Integration von OER
 
@@ -152,7 +180,7 @@ void loop() {
 ### Besondere Motivation\
  mit Blick auf OPAL
 
-Das Projekt XXX zielte darauf ab die Integration von OER in OPAL zu erleichtern. Entsprechend finden sich die OER-Inhalte als Suchgegenstand in der gewohnten Recherche-Umgebung.
+Das Projekt der UB zielte 2018 darauf ab die Integration von OER in OPAL zu erleichtern. Entsprechend finden sich die OER-Inhalte als Suchgegenstand in der gewohnten Recherche-Umgebung.
 
 ```text @plantUML.png
 @startuml
@@ -202,41 +230,22 @@ end
 
 ----
 
+Kurzversion der Projektziele:
 
 ```ascii
-   Extraktion von Metadaten 
-   Evaluation mit Autoren
- + Vorschlagssystem
------------------------------
- = Connected Lecturers                                                   .
++------------------------------------------------------------+
+|    Extraktion von Metadaten                                |        
+|    Evaluation mit Autoren                                  |        
+|  + Vorschlagssystem                                        |
+| ---------------------------                                |
+|  = Connected Lecturers                                     |    
++------------------------------------------------------------+                                      .
 ```
+
 
 > In diesem Projekt fokussieren wir uns auf die Einzeldateien, die in OPAL hochgeladen werden. Ganze Kurse bleiben außen vor.
 
-Insgesamt reden wir über 14.015 Datein! 55% gehören zu den 
-
-<!--
-data-type="barchart"
-data-title="Datentypen im OPAL-OER Datensatz"
-data-show
--->
-| Dateityp | Anzahl |
-| -------- | -----: |
-| `.pdf`   |   6962 |
-| `.jpg`   |   1237 |
-| `.mkv`   |    869 |
-| `.mp4`   |    602 |
-| `.png`   |    563 |
-| `.zip`   |    466 |
-| `.docx`  |    441 |
-| `.html`  |    430 |
-| `.pptx`  |    224 |
-| `.xlsx`  |    208 |
-| `.m`     |    182 |
-| `.py`    |    171 |
-| `.ipynb` |    145 |
-| `.mp3`   |    102 |
-| `.epub`  |     88 |
+Insgesamt reden wir über 14.015 Dateien! 55% gehören zu den Office Datei-Typen (`.pptx`, `.docx`, ...) und `.pdf` Dateien.
 
 ## Status der Umsetzung
 
@@ -267,7 +276,30 @@ flowchart LR
     class Datenaggregation, gray
 ```
 
-> Interessanterweise konnten einige Dokumente nicht heruntergeladen bzw. nicht geöffnet werden. Hier waren einige OER schlicht und ergreifend mit einem Passwort geschützt.
+<!--
+data-type="barchart"
+data-title="Datentypen im OPAL-OER Datensatz"
+data-show
+-->
+| Dateityp | Anzahl |
+| -------- | -----: |
+| `.pdf`   |   6962 |
+| `.jpg`   |   1237 |
+| `.mkv`   |    869 |
+| `.mp4`   |    602 |
+| `.png`   |    563 |
+| `.zip`   |    466 |
+| `.docx`  |    441 |
+| `.html`  |    430 |
+| `.pptx`  |    224 |
+| `.xlsx`  |    208 |
+| `.m`     |    182 |
+| `.py`    |    171 |
+| `.ipynb` |    145 |
+| `.mp3`   |    102 |
+| `.epub`  |     88 |
+
+> Interessanterweise konnten einige Dokumente nicht heruntergeladen bzw. nicht geöffnet werden. Hier waren einige OER schlicht und ergreifend mit einem Passwort geschützt :-)
 
 __Schritt 2: Extraktion der Metadaten__
 
@@ -320,10 +352,92 @@ flowchart LR
     class Datenaggregation,Metadatenaggregation,Evaluation gray
 ```
 
+Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [OPAL-OER-Extraction]() verfügbar. Die gesamte Pipeline ist in Python implementiert und nutzt ein Nvidia 
+DGX2 für die Ausführung des LLM.
+
 ### Herausforderungen
+
+{{0-1}}
+<!-- data-type="none" -->
+|                          | 495                                                                                                                                     |
+| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| `pipe:ID`                | 1PGOlNUd1m7g                                                                                                                            |
+| `pipe:file_type`         | pptx                                                                                                                                    |
+| `opal:filename`          | cdvost_praesi.pptx                                                                                                                      |
+| `opal:oer_permalink`     | https://bildungsportal.sachsen.de/opal/oer/1PGOlNUd1m7g                                                                                 |
+| `opal:license`           | CC BY-NC 4.0 Int.                                                                                                                       |
+| `opal:creator`           | @red(Oliver Löwe)                                                                                                                       |
+| `opal:title`             | Anlagen bergbaulicher Zeichnungen beim Kultur-Hackathon Coding Da Vinci                                                                 |
+| `opal:comment`           | Coding Da Vinci Ost von der Universitätsbibliothek Leipzig ausgetragen; 14./15.4.2018; UB Freiberg ist Datengeber der Leupoldsammlungen |
+| `opal:language`          | Deutsch                                                                                                                                 |
+| `opal:publicationMonth`  | 4                                                                                                                                       |
+| `opal:publicationYear`   | 2018                                                                                                                                    |
+| `file:author`            | @red(Löwe Oliver)                                                                                                                       |
+| `file:keywords`          |                                                                                                                                         |
+| `file:subject`           |                                                                                                                                         |
+| `file:title`             | Zeichnungen bergbaulicher Anlagen (Leupoldsammlung)                                                                                     |
+| `file:created`           | 2018-04-04 10:39:43+00:00                                                                                                               |
+| `file:modified`          | 2018-04-14 11:24:44+00:00                                                                                                               |
+| `file:language`          |                                                                                                                                         |
+| `ai:author`              | @red(Oliver Löwe)                                                                                                                       |
+| `ai:affilation`          | TU Bergakademie Freiberg, Universitätsbibliothek                                                                                        |
+| `ai:title`               | Es gibt keine Datei mit dem Titel "1PGOlNUd1m7g.pptx" im vorgegebenen Kontext.                                                          |
+| `ai:keywords`            | TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Montanwesen                                             |
+| `ai:keywords2`           | TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Bergbau                                                 |
+| `ai:dewey`               | 622.8                                                                                                                                   |
+| `common_substring_count` | @red(6.0)                                                                                                                               |
+
+                       {{1-2}}
+****************************************************
+
+<!-- data-type="none" -->
+|                          | 495                                                                                                                                     |
+| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| `pipe:ID`                | 1PGOlNUd1m7g                                                                                                                            |
+| `pipe:file_type`         | pptx                                                                                                                                    |
+| `opal:filename`          | cdvost_praesi.pptx                                                                                                                      |
+| `opal:oer_permalink`     | https://bildungsportal.sachsen.de/opal/oer/1PGOlNUd1m7g                                                                                 |
+| `opal:license`           | CC BY-NC 4.0 Int.                                                                                                                       |
+| `opal:creator`           | Oliver Löwe                                                                                                                             |
+| `opal:title`             | Anlagen bergbaulicher Zeichnungen beim Kultur-Hackathon Coding Da Vinci                                                                 |
+| `opal:comment`           | Coding Da Vinci Ost von der Universitätsbibliothek Leipzig ausgetragen; 14./15.4.2018; UB Freiberg ist Datengeber der Leupoldsammlungen |
+| `opal:language`          | Deutsch                                                                                                                                 |
+| `opal:publicationMonth`  | 4                                                                                                                                       |
+| `opal:publicationYear`   | 2018                                                                                                                                    |
+| `file:author`            | Löwe Oliver                                                                                                                             |
+| `file:keywords`          |                                                                                                                                         |
+| `file:subject`           |                                                                                                                                         |
+| `file:title`             | Zeichnungen bergbaulicher Anlagen (Leupoldsammlung)                                                                                     |
+| `file:created`           | 2018-04-04 10:39:43+00:00                                                                                                               |
+| `file:modified`          | 2018-04-14 11:24:44+00:00                                                                                                               |
+| `file:language`          |                                                                                                                                         |
+| `ai:author`              | Oliver Löwe                                                                                                                             |
+| `ai:affilation`          | TU Bergakademie Freiberg, Universitätsbibliothek                                                                                        |
+| `ai:title`               | Es gibt keine Datei mit dem Titel "1PGOlNUd1m7g.pptx" im vorgegebenen Kontext.                                                          |
+| `ai:keywords`            | @red(TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Montanwesen)                                       |
+| `ai:keywords2`           | @red(TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Bergbau)                                           |
+| `ai:dewey`               | @red(622.8)                                                                                                                             |
+| `common_substring_count` | 6.0                                                                                                                                     |
+
+> Die DDC Klassifikation 622 trägt das Label "Bergbau und verwandte Tätigkeiten"
+
+****************************************************
+
 
 ### Fragen 
 
+{{0-1}}
+<!-- data-type="none" -->
+| Problemstellung                                                                                                                                                                   | möglicher Lösungsansatz                                              |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Einige Dateien enthalten urheberrechtliche geschützte Inhalte. Deren Referenzierung muss vermieden werden, bzw. auf korrekte Referenzen im Bibliotheksbestand hingewiesen werden. | Abprüfen der Titel mit dem Bestand der UB.                           |
+| Die Fusion der Metadaten aus den unterschiedlichen Quellen (`opal`, `file`, `ai`) ist außerordentlich aufwändig umzusetzen.                                                       | Plausibilitätsprüfung durch die Autorinnen anhand mehrer Vorschläge. |
+| Gibt es ggf. Autorinnen und Autoren die (aus welchen Gründen auch immer) eine Einbindung Ablehnen.                                                                                | ?                                                                    |
+| Welches Modell kann für die Gruppierung bzw. Ähnlichkeitsanalyse herangezogen werden?                                                                                             | ?                                                                    |
 
+{{0-2}}
+![](images/dewey_decimal_graph.png "DDC Klassifikation für einen Kurs der Autoren im Bereich der Eingebetteten Systeme")
 
-
+{{1-2}}
+<!-- class="highlight" -->
+> Vielen Dank für Ihre Aufmerksamkeit. Ich freue mich auf Ihre Fragen und Anregungen.
