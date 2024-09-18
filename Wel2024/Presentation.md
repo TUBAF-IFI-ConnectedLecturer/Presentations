@@ -3,7 +3,7 @@ author:   Sebastian Zug; André Dietrich
 
 email:    sebastian.zug@informatik.tu-freiberg.de
 
-version:  0.1.1
+version:  0.1.2
 
 language: en
 
@@ -53,12 +53,12 @@ red:  @mark(#FF888888,@0)
 
 > Das Vorhaben wird durch den [AK Elearning Sachsen](https://bildungsportal.sachsen.de/portal/parentpage/institutionen/arbeitskreis-e-learning-der-lrk-sachsen/) gefördert. 
 
-<!-- class="highlight" -->
+<!-- class="reference"-->
 > Dieser Vortrag ist eine Open Educational Resource (OER) und steht unter der Lizenz [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de). Alle enthaltenen Inhalte können frei verwendet werden und sind unter https://github.com/TUBAF-IFI-ConnectedLecturer/Presentations/blob/main/Wel2024/Presentation.md verfügbar
 
 ## Kurzvorstellung der Projektpartner
 
-             {{0-3}}
+             {{0-2}}
 ***********************************
 
 __Arbeitsgruppe Softwaretechnologie und Robotik__
@@ -75,10 +75,7 @@ __Arbeitsgruppe Softwaretechnologie und Robotik__
 
 ***********************************
 
-{{1-2}}
-> Wie vermittelt man technische Fragestellungen, die einen hohen Hardwareaufwand benötigen?
-
-             {{2-3}}
+             {{1-2}}
 ***********************************
 
 + _Forschungsfeld 2: Digitale Lehre_
@@ -89,22 +86,24 @@ __Arbeitsgruppe Softwaretechnologie und Robotik__
 
 ***********************************
 
-             {{3-4}}
+             {{2-3}}
 ***********************************
 
 __Universitätsbibliothek der Bergakademie Freiberg__
 
+- Lehr- und forschungsunterstützende, informationswissenschaftliche Einrichtung an der TUBAF
+- Traditionelle bibliothekarischen Aufgaben (Literaturbeschaffung, -bearbeitung, -distribution) verstärkt in modernen digitalen Bereichen aktiv
 
+  - Open Access Publizieren
+  - Forschungsdatenmanagement
+  - Open Science
+  - Metadatenmanagement / Data Science
 
-Anreicherung digitaler Objekte mit Metadaten in OPAL – Implementierung einer Schnittstelle zur Anbindung externer Recherchesysteme
+- Übernahme von Smart Library Konzepten - Schaffung von Lehr- und Lernräumen (Podcaststudio, AR/VR-Räume)
+- Intensive Kooperation mit den Wissenschaftlerinnen vor Ort z.B. Institut für Informatik
 
-Projektleiterin: Susanne Kandler, Direktorin Universitätsbibliothek TU Bergakademie Freiberg
-
-Projektverantwortlicher: Oliver Löwe
-
-Projektpartner: BPS GmbH
-
-Projektlaufzeit: 01.09.2017 – 31.12.2018
+<!-- class="reference"-->
+> "_Anreicherung digitaler Objekte mit Metadaten in OPAL – Implementierung einer Schnittstelle zur Anbindung externer Recherchesysteme_", 2017/2018, [Link](https://bildungsportal.sachsen.de/impulse/projekt/anreicherung-digitaler-objekte-mit-metadaten-in-opal-implementierung-einer-schnittstelle-zur-anbindung-externer-recherchesysteme/)
 
 
 ***********************************
@@ -132,7 +131,7 @@ _Ich habe bereits Inhalte in OPAL mit einer offenen Lizenz hochgeladen._
 
 ### Motivation
 
-> Warum OER?
+> Warum überhaupt OER?
 
 <div id="example">
 <wokwi-led color="red"   pin="13" label="13"></wokwi-led>
@@ -161,24 +160,30 @@ void loop() {
 ```
 @AVR8js.sketch(example)
 
-<!-- class="highlight" -->
+{{1-2}}
 > OER unterstützen den individuellen Lehrenden bei der Erstellung von interaktiven Lehr-Lern-Inhalten, die die Kapazitäten eines einzelnen übersteigen.
 
 ### Herausforderungen bei der Integration von OER
 
+Welche Hemnisse sehen Lehrende bei der Verwendung von OER-Inhalten in Ihrer Lehre?
+
 1. _Rechtliche Unsicherheiten_
 2. _Technische Hürden_
-3. ___Aufwändige Suche nach passenden Materialien___
-4. ...
+3. _Fehlende Passgenauigkeit_
+4. _Eigene Qualitätsstandards_
+5. ___Aufwändige Suche nach passenden Materialien___
+6. ...
 
+<!-- class="reference"-->
 > "_Vorstudie zur OER-Initiative sächsischer Hochschulen_" (2023-2024) [Link](https://www.hd-sachsen.de/projekte/oer-initiative-02/2023-07/2024)
 
+<!-- class="reference"-->
 > "_Offene Bildungsinfrastrukturen - Anforderungen an eine OER-förderliche IT-Infrastruktur_" (2023), HIS-Institut für Hochschulentwicklung e. V, [Link](https://medien.his-he.de/publikationen/detail/offene-bildungsinfrastrukturen)
 
+<!-- class="reference"-->
 > "_Didaktische Metadaten in OER- und Lehrportalen Von der Prämisse pädagogischer Neutralität zur Stärkung einer offenen Lehrpraxis_" (2024), HIS-Institut für Hochschulentwicklung e. V, [Link](https://medien.his-he.de/fileadmin/user_upload/Publikationen/Forum_Hochschulentwicklung/HIS-HE-Forum_Didaktische_Metadaten_in_OER-_und_Lehrportalen.pdf)
 
-### Besondere Motivation\
- mit Blick auf OPAL
+### Besondere Motivation mit Blick auf OPAL
 
 Das Projekt der UB zielte 2018 darauf ab die Integration von OER in OPAL zu erleichtern. Entsprechend finden sich die OER-Inhalte als Suchgegenstand in der gewohnten Recherche-Umgebung.
 
@@ -196,7 +201,7 @@ end
 @enduml
 ```
 
-<iframe src="https://katalog.ub.tu-freiberg.de/Record/finc-172-7PHyQGI" title="Wenig vorbildlicher Datensatz"></iframe><!--style="width:100%; display:block; height: 100vh;"--> 
+<iframe src="https://katalog.ub.tu-freiberg.de/Record/finc-172-7PHyQGI" title="Wenig vorbildlicher Datensatz"></iframe><!--style="width:100%; display:block; height: 50vh;"--> 
 
 > Es fehlen die Metadaten für die gezielte Exploration der OER-Inhalte im OPAL!
 
@@ -244,8 +249,6 @@ Kurzversion der Projektziele:
 
 
 > In diesem Projekt fokussieren wir uns auf die Einzeldateien, die in OPAL hochgeladen werden. Ganze Kurse bleiben außen vor.
-
-Insgesamt reden wir über 14.015 Dateien! 55% gehören zu den Office Datei-Typen (`.pptx`, `.docx`, ...) und `.pdf` Dateien.
 
 ## Status der Umsetzung
 
@@ -298,6 +301,9 @@ data-show
 | `.ipynb` |    145 |
 | `.mp3`   |    102 |
 | `.epub`  |     88 |
+
+
+> Insgesamt reden wir über 14.015 Dateien! 55% davon gehören zu den Office Datei-Typen (`.pptx`, `.docx`, ...) und `.pdf` Dateien (Stand August 2024).
 
 > Interessanterweise konnten einige Dokumente nicht heruntergeladen bzw. nicht geöffnet werden. Hier waren einige OER schlicht und ergreifend mit einem Passwort geschützt :-)
 
@@ -413,9 +419,9 @@ Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [D
 | `ai:author`              | Oliver Löwe                                                                                                                             |
 | `ai:affilation`          | TU Bergakademie Freiberg, Universitätsbibliothek                                                                                        |
 | `ai:title`               | Es gibt keine Datei mit dem Titel "1PGOlNUd1m7g.pptx" im vorgegebenen Kontext.                                                          |
-| `ai:keywords`            | @red(TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Montanwesen)                                       |
-| `ai:keywords2`           | @red(TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Bergbau)                                           |
-| `ai:dewey`               | @red(622.8)                                                                                                                             |
+| `ai:keywords`            | <!--style="background-color:#FF888888"--> TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Montanwesen   |
+| `ai:keywords2`           | <!--style="background-color:#FF888888"--> TU Bergakademie Freiberg, Universitätsbibliothek, Leupoldsammlung, Zeichnungen, Bergbau       |
+| `ai:dewey`               | <!--style="background-color:#FF888888"--> 622.8                                                                                         |
 | `common_substring_count` | 6.0                                                                                                                                     |
 
 > Die DDC Klassifikation 622 trägt das Label "Bergbau und verwandte Tätigkeiten" vgl. [GND](https://lobid.org/gnd/4005614-4)
@@ -425,7 +431,8 @@ Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [D
 
 ### Lösungsansätze
 
-{{0-1}}
+
+
 <!-- data-type="none" -->
 | Problemstellung                                                                                                                                                                   | möglicher Lösungsansatz                                              |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -434,9 +441,35 @@ Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [D
 | Gibt es ggf. Autorinnen und Autoren die (aus welchen Gründen auch immer) eine Einbindung Ablehnen.                                                                                | ?                                                                    |
 | Welches Modell kann für die Gruppierung bzw. Ähnlichkeitsanalyse herangezogen werden?                                                                                             | ?                                                                    |
 
-{{0-2}}
 ![](images/dewey_decimal_graph.png "DDC Klassifikation für einen Kurs der Autoren im Bereich der Eingebetteten Systeme")
 
-{{1-2}}
-<!-- class="highlight" -->
-> Vielen Dank für Ihre Aufmerksamkeit. Ich freue mich auf Ihre Fragen und Anregungen.
+
+## Danke 
+
+<div class="left">
+
+> Vielen Dank für Ihr Interesse! Wir freuen uns auf Ihre Fragen und Anregungen.
+
+Sebastian Zug
+
+<a href="mailto:sebastian.zug@informatik.tu-freiberg.de">
+    sebastian.zug@informatik.tu-freiberg.de 
+</a>
+
+------------------
+
+Oliver Löwe
+
+<a href="mailto:oliver.loewe@ub.tu-freiberg.de">
+    oliver.loewe@ub.tu-freiberg.de
+</a>
+
+</div>
+
+<div class="right">
+
+![](images/URL.png)
+
+</div>
+
+
