@@ -3,7 +3,7 @@ author:   Sebastian Zug; André Dietrich
 
 email:    sebastian.zug@informatik.tu-freiberg.de
 
-version:  0.1.0
+version:  0.1.1
 
 language: en
 
@@ -352,8 +352,7 @@ flowchart LR
     class Datenaggregation,Metadatenaggregation,Evaluation gray
 ```
 
-Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [OPAL-OER-Extraction]() verfügbar. Die gesamte Pipeline ist in Python implementiert und nutzt ein Nvidia 
-DGX2 für die Ausführung des LLM.
+Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [Data_aggregation](https://github.com/TUBAF-IFI-ConnectedLecturer/Data_aggregation) verfügbar. Die gesamte Pipeline ist in Python implementiert und nutzt für die AI Komponenten eine Nvidia DGX2. Als LLM kommt aktuell ein [llama3](https://ollama.com/library/llama3) zum Einsatz.
 
 ### Herausforderungen
 
