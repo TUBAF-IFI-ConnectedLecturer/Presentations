@@ -419,12 +419,12 @@ DGX2 für die Ausführung des LLM.
 | `ai:dewey`               | @red(622.8)                                                                                                                             |
 | `common_substring_count` | 6.0                                                                                                                                     |
 
-> Die DDC Klassifikation 622 trägt das Label "Bergbau und verwandte Tätigkeiten"
+> Die DDC Klassifikation 622 trägt das Label "Bergbau und verwandte Tätigkeiten" vgl. [GND](https://lobid.org/gnd/4005614-4)
 
 ****************************************************
 
 
-### Fragen 
+### Lösungsansätze
 
 {{0-1}}
 <!-- data-type="none" -->
