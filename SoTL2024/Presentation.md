@@ -3,7 +3,7 @@ author:   Sebastian Zug; André Dietrich
 
 email:    sebastian.zug@informatik.tu-freiberg.de
 
-version:  0.1.0
+version:  0.1.1
 
 language: en
 
@@ -47,7 +47,7 @@ red:  @mark(#FF888888,@0)
 | Universitätsbibliothek                    | Oliver Löwe                   |
 
 
-<h5><p>Prof. Dr. Sebastian Zug, LehrNetzwerks Scholarship of Teaching and Learning, Dresden</p></h5>
+<h5><p>Prof. Dr. Sebastian Zug, LehrNetzwerk Scholarship of Teaching and Learning, Dresden</p></h5>
 
 ---
 
