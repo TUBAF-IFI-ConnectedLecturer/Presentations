@@ -9,7 +9,7 @@ language: en
 
 narrator: UK English Female
 
-icon:     TuBAF_Logo_schwarz.png
+icon:     TUBAF_Logo_schwarz.png
 
 link:     style.css
 
