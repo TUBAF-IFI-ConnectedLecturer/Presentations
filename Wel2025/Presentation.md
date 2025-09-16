@@ -94,7 +94,7 @@ __Sprache__
 > Markdown ist eine vereinfachte Auszeichnungssprache, die der Ausgangspunkt unserer Entwicklung von LiaScript war.
 ```
 
-> LiaScript Tutorials finden an der TU Dresden am [23. September](https://tu-dresden.de/zill/das-zentrum/termine/workshop-oer-gestalten-mit-liascript) TU Chemnitz im November statt.
+> LiaScript Tutorials finden an der TU Dresden am [23. September](https://tu-dresden.de/zill/das-zentrum/termine/workshop-oer-gestalten-mit-liascript) und an der TU Chemnitz im November statt.
 
 
 ***********************************
