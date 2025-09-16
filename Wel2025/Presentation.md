@@ -37,7 +37,7 @@ red:  @mark(#FF888888,@0)
 | Universitätsbibliothek                    | Oliver Löwe                   |
 
 
-<h5><p>Prof. Dr. Sebastian Zug, Workshop on e-Learning 2025, Leipzit</p></h5>
+<h5><p>Prof. Dr. Sebastian Zug, Workshop on e-Learning 2025, Leipzig</p></h5>
 
 ---
 
@@ -55,7 +55,7 @@ __Arbeitsgruppe Softwaretechnologie und Robotik__
 
 ***********************************
 
-             {{0-2}}
+             {{0-1}}
 ***********************************
 
 + _Forschungsfeld 1: Robotik_
@@ -366,12 +366,14 @@ Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [D
 
 ### Merkmalserschließung
 
-**Autorenidentifikation**
+**Autorenidentifikation generell ...**
 
 ![](images/venn_diagram.png "Übereinstimmungen bei den extrahierten Namen")
 
 
 ### Ähnlichkeitsanalyse 
+
+**Ähnlichkeit im Einzelfall ...**
 
 ![](images/zeidler.png "Ähnlichkeit und Abgrenzung von Materialien von Prof. Zeidler, TU Bergakademie Freiberg")
 
