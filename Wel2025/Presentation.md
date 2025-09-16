@@ -381,11 +381,18 @@ Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [D
 
 **Ergebnis als Tabelle aus ** https://raw.githubusercontent.com/TUBAF-IFI-ConnectedLecturer/Presentations/refs/heads/main/Wel2025/data/nodes.html
 
-<iframe src="/data/nodes.html" style="width:100%; height:600px; border:1px solid #ccc;" title="OER Inhaltslandkarte"></iframe>
-
-**Ergebnis als Graph aus ** ?????
+<iframe src="/data/nodes.html" style="width:100%; height:80vh; border:1px solid #ccc;" title="OER Inhaltslandkarte"></iframe>
 
 
+
+    {{1}}
+**Ergebnis als Graph:** https://tubaf-ifi-connectedlecturer.github.io/Data 
+
+    {{2}}
+<iframe src="https://tubaf-ifi-connectedlecturer.github.io/Data/?mode=normal&search=freiberg&id=9VxTJ5Pz1B-A" style="width:100%; height:80vh; border:1px solid #ccc;" title="OER Inhaltslandkarte"></iframe>
+
+    {{3}}
+<iframe src="https://tubaf-ifi-connectedlecturer.github.io/Data/?mode=sparql&id=9VxTJ5Pz1B-A&sparql=UFJFRklYIGRjdGVybXM6IDxodHRwOi8vcHVybC5vcmcvZGMvdGVybXMvPgpQUkVGSVggZWR1OiA8aHR0cDovL2V4YW1wbGUub3JnL2VkdWNhdGlvbi8%252BClBSRUZJWCBzaW06IDxodHRwOi8vZXhhbXBsZS5vcmcvc2ltaWxhcml0eS8%252BCgpTRUxFQ1QgP3Jlc291cmNlID90aXRsZSA%252FY3JlYXRvciA%252Fc2ltaWxhckNvdW50IFdIRVJFIHsKICAjIFByZS1maWx0ZXIgdG8gbGVhcm5pbmcgcmVzb3VyY2VzIGZpcnN0CiAgewogICAgU0VMRUNUID9yZXNvdXJjZSAoQ09VTlQoRElTVElOQ1QgP3JlbGF0ZWQpIGFzID9zaW1pbGFyQ291bnQpIFdIRVJFIHsKICAgICAgP3Jlc291cmNlIGEgZWR1OkxlYXJuaW5nUmVzb3VyY2UgLgogICAgICAKICAgICAgIyBDb3VudCBzaW1pbGFyaXRpZXMgZWZmaWNpZW50bHkgd2l0aCBlYXJseSBsaW1pdGluZwogICAgICB7CiAgICAgICAgU0VMRUNUIERJU1RJTkNUID9yZXNvdXJjZSA%252FcmVsYXRlZCBXSEVSRSB7CiAgICAgICAgICB7CiAgICAgICAgICAgID9yZWxhdGlvbiBhIHNpbTpTaW1pbGFyaXR5UmVsYXRpb24gOwogICAgICAgICAgICAgICAgICAgICAgc2ltOnNvdXJjZSA%252FcmVzb3VyY2UgOwogICAgICAgICAgICAgICAgICAgICAgc2ltOnRhcmdldCA%252FcmVsYXRlZCAuCiAgICAgICAgICB9CiAgICAgICAgICBVTklPTgogICAgICAgICAgewogICAgICAgICAgICA%252FcmVsYXRpb24gYSBzaW06U2ltaWxhcml0eVJlbGF0aW9uIDsKICAgICAgICAgICAgICAgICAgICAgIHNpbTpzb3VyY2UgP3JlbGF0ZWQgOwogICAgICAgICAgICAgICAgICAgICAgc2ltOnRhcmdldCA%252FcmVzb3VyY2UgLgogICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBMSU1JVCAxMDAwICAjIFByZS1saW1pdCBzaW1pbGFyaXR5IHJlbGF0aW9ucyB0byBjaGVjawogICAgICB9CiAgICB9CiAgICBHUk9VUCBCWSA%252FcmVzb3VyY2UKICAgIE9SREVSIEJZIERFU0MoP3NpbWlsYXJDb3VudCkKICAgIExJTUlUIDIwICAjIFByZS1zZWxlY3QgdG9wIGNhbmRpZGF0ZXMKICB9CiAgCiAgIyBHZXQgbWV0YWRhdGEgZm9yIHNlbGVjdGVkIHJlc291cmNlcwogID9yZXNvdXJjZSBkY3Rlcm1zOnRpdGxlID90aXRsZSAuCiAgT1BUSU9OQUwgeyA%252FcmVzb3VyY2UgZGN0ZXJtczpjcmVhdG9yID9jcmVhdG9yIH0KfQpPUkRFUiBCWSBERVNDKD9zaW1pbGFyQ291bnQpCkxJTUlUIDEw&preset=similarity_count" style="width:100%; height:80vh; border:1px solid #ccc;" title="OER Inhaltslandkarte"></iframe>
 
 
 ## Danke 
