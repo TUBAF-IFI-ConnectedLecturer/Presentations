@@ -3,7 +3,7 @@ author:   Sebastian Zug; André Dietrich
 
 email:    sebastian.zug@informatik.tu-freiberg.de
 
-version:  0.1.2
+version:  0.1.3
 
 language: en
 
@@ -376,9 +376,6 @@ Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [D
 
 ### Ähnlichkeitsanalyse 
 
-
-           {{0-1}}
-********************************
 
 **Ähnlichkeit im Einzelfall ...**
 
