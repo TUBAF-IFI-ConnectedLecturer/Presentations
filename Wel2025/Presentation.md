@@ -379,8 +379,14 @@ Die Umsetzung der gesamten Pipeline ist unter url als Open Source verfügbar: [D
 
 ### Darstellung der Ergebnisse 
 
-+ tabellarisch 
-+ als Graph ... und hier wird es jetzt spannend.
+**Ergebnis als Tabelle aus ** https://raw.githubusercontent.com/TUBAF-IFI-ConnectedLecturer/Presentations/refs/heads/main/Wel2025/data/nodes.html
+
+<iframe src="/data/nodes.html" style="width:100%; height:600px; border:1px solid #ccc;" title="OER Inhaltslandkarte"></iframe>
+
+**Ergebnis als Graph aus ** ?????
+
+
+
 
 ## Danke 
 
