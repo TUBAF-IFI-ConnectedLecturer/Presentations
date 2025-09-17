@@ -3,7 +3,7 @@ author:   Sebastian Zug; André Dietrich
 
 email:    sebastian.zug@informatik.tu-freiberg.de
 
-version:  0.2.4
+version:  0.3.0
 
 language: en
 
@@ -41,7 +41,7 @@ red:  @mark(#FF888888,@0)
 
 ---
 
-> Das Vorhaben wird durch den [AK Elearning Sachsen](https://bildungsportal.sachsen.de/portal/parentpage/institutionen/arbeitskreis-e-learning-der-lrk-sachsen/) gefördert. 
+> Die Vorhaben werden mitfinanziert durch Steuermittel auf der Grundlage des vom Sächsischen Landtag beschlossenen Haushaltes. Die organisatorische Gesamtkoordination der Vorhaben obliegt der Geschäftsstelle des [AK Elearning Sachsen](https://bildungsportal.sachsen.de/portal/parentpage/institutionen/arbeitskreis-e-learning-der-lrk-sachsen/). 
 
 <!-- class="reference"-->
 > Dieser Vortrag ist eine Open Educational Resource (OER) und steht unter der Lizenz [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de). Alle enthaltenen Inhalte können frei verwendet werden und sind unter https://github.com/TUBAF-IFI-ConnectedLecturer/Presentations/blob/main/Wel2025/Presentation.md verfügbar
