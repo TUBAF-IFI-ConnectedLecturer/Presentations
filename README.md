@@ -1,4 +1,5 @@
-# Präsentationen im Kontext des Projektes CL
+# Präsentationen im Kontext des Projektes OER - Connected Lecturers
+
 
 | Datum      | Titel                                | Veranstaltung                        | Link                                                                                                                                                   |
 | ---------- | ------------------------------------ | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
